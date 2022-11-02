@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "start": "lessc styles/styles.less public/css/styles.css npm run && node app",
-    "start-dev": "lessc styles/styles.less public/css/styles.css npm run && nodemon --verbose -e js,less index",
-    "start-dev-inspect": "npm run && nodemon --inspect --verbose -e js,less index",
+    "dev":"run-p -l dev:*",
+    "dev:mkdir":"mkdir -p public/webfonts",
+    "dev:copyWebfonts":"cp -r node_modules/@fortawesome/fontawesome-free/webfonts/* public/webfonts",
+    "dev:less":"lessc styles/styles.less public/css/styles.css",
+    "dev:run-node":"npm run && nodemon --verbose -e js,less index",
     "test": "jest --colors",
     "test:watch": "jest --watch --colors"
   },
