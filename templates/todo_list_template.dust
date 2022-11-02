@@ -1,0 +1,8 @@
+
+<form  action='/delTodo' method='POST'>
+    <input type="text" id="id" name="id" value="{id}" readonly/>
+     <input type="text" id="todo" name="todo" value="{todo}" readonly/>
+   <button type="submit" class="button-del">
+            <i class="fa-solid fa-trash"></i>
+    </button>
+</form>

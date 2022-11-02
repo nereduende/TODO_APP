@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" type="text/css"   href="/css/styles.css">
+    <title>TODOs APP</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+       <h1>{title}</h1>
+    </div>
+    <div id="content">
+      
+        <form  action='/addTodo' method='POST'>
+            <input type="text" id="description" name="description">
+            <button type="submit" class="button-add">
+               <i class="fa-solid fa-plus"></i>
+            </button>
+        </form>
+        {#todoList}
+        {>todo_list_template id=id todo=todo/}
+        {/todoList}
+    </div>
+</div>
+</body>
+</html>
