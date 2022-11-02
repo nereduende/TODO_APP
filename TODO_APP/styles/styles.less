@@ -1,0 +1,53 @@
+@import "../node_modules/@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "../node_modules/@fortawesome/fontawesome-free/less/solid.less";
+@import "../node_modules/@fortawesome/fontawesome-free/less/brands.less";
+@import "../node_modules/@fortawesome/fontawesome-free/less/v4-shims.less";
+
+@fontSizeH1: 16px;
+@colorBlue: #008ac5;
+@colorRed: red;
+@fontFamily: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+h1 {
+ font-family: @fontFamily;
+ font-size: @fontSizeH1;
+ color: @colorBlue;
+}
+
+.button-add {
+    background-color: white;
+    color: @colorBlue;
+    border: 2px solid @colorBlue;
+    font-size: medium;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+.button-add:hover {
+    background-color: @colorBlue;
+    color: white;
+}
+
+input[type=text]:read-only {
+    font-family: @fontFamily;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+input[type=text]{
+    border-radius: 6px;
+}
+
+.button-del {
+    background-color: white;
+    font-size: medium;
+    color:  @colorRed;
+    border: 2px solid @colorRed;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+.button-del:hover {
+    background-color: @colorRed;
+    color: white;
+}
